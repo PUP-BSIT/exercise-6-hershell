@@ -61,8 +61,8 @@
       <h2>Contact Me</h2>
       <div class="contact">
         <form action="#">
-          <label for="full-name">Full Name:</label>
-          <input type="text" id="full-name" placeholder="Your Name" required />
+          <label for="full_name">Full Name:</label>
+          <input type="text" id="full_name" placeholder="Your Name" required />
           <label for="email">E-mail:</label>
           <input
             type="email"
@@ -81,5 +81,42 @@
         </form>
       </div>
     </div>
+
+    <section class="goal-section">
+      <h2>My Goals</h2>
+      <div class="goals">
+        <div class="goal">Graduate College</div>
+        <div class="goal">Travel to Different Places.</div>
+        <div class="goal">
+          Build a Personal Portfolio Website by the End of the Semester.
+        </div>
+        <div class="goal">Develop a Personal Project.</div>
+        <div class="goal">Improve Understanding in Logical Problems.</div>
+        </div>
+        
+      </div>
+      <div class="comment-form">
+        <form>
+          <fieldset>
+            <legend>Leave a Comment</legend>
+            <input
+              type="text"
+              id="name_comment"
+              placeholder="Your Name"
+              oninput="checkForm()"
+            />
+            <textarea
+              id="comment"
+              placeholder="Your Comment"
+              rows="5"
+              oninput="checkForm()"
+            ></textarea>
+            <button id="comment_button" class="disabled" disabled>
+              Comment
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
