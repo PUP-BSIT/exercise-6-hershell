@@ -110,7 +110,7 @@ button:enabled {
   max-width: 50%;
 }
 
-.comment-form {
+.comment_form {
   display: flex;
   align-items: center;
   margin: auto;
