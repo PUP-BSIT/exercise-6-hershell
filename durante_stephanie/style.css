@@ -27,7 +27,9 @@ div {
 
 .interest,
 .works,
-.testimonials {
+.testimonials,
+.goals,
+.comment-section {
   justify-items: center;
   border: 5px solid rgba(113, 57, 52, 0.133);
   background-color: rgba(147, 51, 51, 0.133);
@@ -92,11 +94,27 @@ textarea {
   box-sizing: border-box;
 }
 
-button {
+button:enabled {
   background-color: white;
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 1rem;
+}
+
+.add-comment {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  border: 5px solid rgba(113, 57, 52, 0.133);
+  background-color: rgba(147, 51, 51, 0.133);
+  max-width: 50%;
+}
+
+.comment-form {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  gap: 1rem;
 }
 
 @media (max-width: 425px) {
