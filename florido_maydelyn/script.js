@@ -1,16 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const nameInput = document.getElementById("comment_name");
-  const commentInput = document.getElementById("comment");
-  const commentButton = document.querySelector("#comment_button button");
+function toggleButton() {
+  let nameInput = document.getElementById("comment_name");
+  let commentInput = document.getElementById("comment");
+  let commentButton = document.getElementById("comment_button");
 
-  function toggleButton() {
-    if (nameInput.value.trim() !== "" && commentInput.value.trim() !== "") {
-      commentButton.removeAttribute("disabled");
-    } else {
-      commentButton.setAttribute("disabled", true);
-    }
+  if (nameInput.value.length > 0 && commentInput.value.length > 0) {
+    commentButton.disabled = false;
+  } else {
+    commentButton.disabled = true;
   }
+}
 
-  nameInput.addEventListener("input", toggleButton);
-  commentInput.addEventListener("input", toggleButton);
-});
+document.getElementById("comment_name").addEventListener("input", toggleButton);
+document.getElementById("comment").addEventListener("input", toggleButton);
